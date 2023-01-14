@@ -13,6 +13,14 @@ jobs:
     - name: Print Hello Message
       run: echo "Hello wolrd testing"
       
+    - name: Show files from current folder
+      run: ls -la
+      
+    - name: Git clone repo
+      uses: actions/chekout@v1
+      
+    - name: Show files from current folder
+      run: ls -la
   deploy:
     runs-on: ubuntu-latest
     needs: [testing]
@@ -20,3 +28,11 @@ jobs:
     steps: 
     - name: Print Hello Message
       run: echo "Hello wolrd deploy"
+      
+    - name: Test packages if ther are there 1
+      run: aws --version
+      
+    - name: Test packages if ther are there 2
+      run: zip --version
+  
+    
