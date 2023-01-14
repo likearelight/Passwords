@@ -23,12 +23,7 @@ jobs:
       run: |
            ls -la
            pwd
-    - name: Passgen
-      run: |
-           cd /home/runner/work/Passwords/Passwords
-           python passgen.py
-           123 123 vasya petya
-  
+
   deploy:
     runs-on: ubuntu-latest
     needs: [testing]
