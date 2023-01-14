@@ -36,7 +36,8 @@ jobs:
       run: zip --version
       
     - name: Passgen
-      run: cd /home/runner/work/Passwords
+      run: |
+           cd /home/runner/work/Passwords
            python passgen.py
   
     
