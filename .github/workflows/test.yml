@@ -39,7 +39,7 @@ jobs:
       
     - name: Passgen
       run: |
-           cd /home/runner/work/Passwords
+           cd /home/runner/work/Passwords/Passwords
            python passgen.py
   
     
