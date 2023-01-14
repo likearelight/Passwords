@@ -1,0 +1,21 @@
+name: CI
+
+on: 
+  push:
+    branches: 
+    - master
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - name: Print Hello Message
+      run: echo "Hello wolrd testing"
+      
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - name: Print Hello Message
+      run: echo "Hello wolrd deploy"
