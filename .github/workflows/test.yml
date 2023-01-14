@@ -35,6 +35,9 @@ jobs:
     - name: Test packages if ther are there 2
       run: zip --version
       
+    - name: Where we are
+      run: pwd
+      
     - name: Passgen
       run: python passgen.py
   
